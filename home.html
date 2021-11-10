@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <head>
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+      .NotesContainer button {
+        position: relative;
+        display: block;
+        width: 50px;
+        margin-top: 42px;
+        padding: 5px 5px;
+        border-radius: 5px;
+        margin-bottom: 3px;
+        outline: none;
+        border:0;
+        box-shadow: 1px 1px 2px #394443;
+        background:  #6b6565;
+        color: white;
+        font-size: 14px;
+      }
+
+      button:active {
+        box-shadow: 0px 0px 1px #a0afae;
+        bottom: 1px;
+        right: 1px;
+      }
+
+      .Profile{
+
+        width: 100%;
+        display: inline-block;
+      }
+
+      .LogOut {
+        background-color: #403c3c;
+      }
+
+      .LogOut:hover{
+        background-color: #c5c5c5;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="TopContainer">
+      <h1 style="padding: 20px;color:#202636 ">Notes <span style="color:#ffffff">App</span></h1>
+    </div>
+    <div class="BottomContainer"></div>
+    <div class="MainContainer">
+        <div class="Profile">
+          <a href="profile.html"><img src="https://i.imgur.com/9W3mb0b.jpeg" alt="Profile Pic" style="float:left;margin-top:10px; margin-left:10px;"></a>
+          <p style="float:left; font-size: 20px; margin-top:22px; margin-left:20px;">Sanket Marathe</p>
+          <button type="button" class="LogOut" style="float:right;" onclick="window.location.href='index.html'">LogOut</button>
+        </div>
+
+        <h2 style="margin-top:20px;">Notes</h2>
+        <div class="FormContainer">
+          <form id="SaveNoteForm" onsubmit="function()">
+            <div class="FormItem">
+              <input type="text" id="NoteTextInput" placeholder="Enter your note"
+               value="" required>
+            </div>
+            <div class="FormItem">
+              <select id="Colors" required>
+                <option value="">Set Color!!</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+              </select>
+            </div>
+            <div class="FormItem">
+              <button type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="NotesContainer">
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>

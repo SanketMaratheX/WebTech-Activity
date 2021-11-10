@@ -1,0 +1,73 @@
+img {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  border-radius: 25px;
+}
+
+.FormContainer {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.FormContainer .FormItem {
+  width: 33%;
+  display: inline-block;
+  padding: 1% 2%;
+
+}
+
+.FormContainer .FormItem input, .FormContainer .FormItem select {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+.NotesContainer {
+  display: block;
+  clear: both;
+  padding-top: 10px;
+}
+
+.NotesContainer .NoteItem {
+  width: 21%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 1% 2%;
+  padding: 10px;
+  border-radius: 2px;
+  min-height: 100px;
+}
+
+.NotesContainer .NoteItem span {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+
+.NotesContainer .NoteItem p {
+  margin: 0;
+}
+
+.NotesContainer .NoteItem button {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #5b89e5;
+}
+
+.red {
+  background-color: #e55b5b;
+}
+
+.green {
+  background-color: #68e55b;
+}

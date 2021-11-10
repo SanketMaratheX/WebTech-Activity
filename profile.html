@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <head>
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      .Profile{
+
+        width: 100%;
+        display: inline-block;
+      }
+
+      .LogOut {
+        background-color: #403c3c;
+      }
+
+      .LogOut:hover{
+        background-color: #c5c5c5;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-style: none;
+        border-radius: 25px;
+      }
+
+    </style>
+  </head>
+  <body>
+      <div class="TopContainer">
+        <h1 style="padding: 20px;color:#202636 ">Notes <span style="color:#ffffff">App</span></h1>
+      </div>
+      <div class="BottomContainer"></div>
+      <div class="MainContainer">
+        <div class="Profile">
+          <img src="https://i.imgur.com/9W3mb0b.jpeg" alt="Profile Pic" style="float:left;margin-top:10px; margin-left:10px;">
+          <p style="float:left; font-size: 20px; margin-top:22px; margin-left:20px;">Sanket Marathe</p>
+          <button type="button" class="LogOut" style="float:right;" onclick="window.location.href='index.html'">LogOut</button>
+        </div>
+        <div class="Form">
+          <form action="/action_page.php">
+            <label for="FirstName">First name:</label>
+            <input type="text" id="FirstName" name="FirstName" value="Elon"><br><br>
+            <label for="LastName">Last name:</label>
+            <input type="text" id="LastName" name="LastName" value="Musk"><br>
+
+            <br><label for="Gender">Gender:</label>
+            <select>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="ProfilePic">Profile Picture Link:</label>
+            <input type="url" id="ProfilePic" name="ProfilePic" value="https://i.imgur.com/9W3mb0b.jpeg"><br><br>
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" name="DOB" value="09-04-2001"><br><br>
+
+            <label for="UserName">User Name:</label><br><br>
+            <input type="text" id="UserName" name="UserName" value="DogeToTheMoon"><br><br>
+            <label for="Password">Password:</label><br><br>
+            <input type="password" id="Password" name="Password" value="Password"><br>
+            <br><br>
+            <button type="submit">Update</button>
+            <button type="button" onclick="window.location.href='home.html'">Back</button>
+
+          </form>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <head>
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+      <div class="TopContainer">
+        <h1 style="padding: 20px;color:#202636 ">Notes <span style="color:#ffffff">App</span></h1>
+      </div>
+      <div class="BottomContainer"></div>
+      <div class="MainContainer">
+        <div class="Form">
+          <form action="/action_page.php">
+            <label for="FirstName">First name:</label>
+            <input type="text" id="FirstName" name="FirstName" placeholder="Elon"><br><br>
+            <label for="LastName">Last name:</label>
+            <input type="text" id="LastName" name="LastName" placeholder="Musk"><br>
+
+            <br><label for="Gender">Gender:</label>
+            <select>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="ProfilePic">Profile Picture Link:</label>
+            <input type="url" id="ProfilePic" name="ProfilePic" value="https://i.imgur.com/9W3mb0b.jpeg"><br><br>
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" name="DOB" placeholder="09-04-2001"><br><br>
+
+            <label for="UserName">User Name:</label><br><br>
+            <input type="text" id="UserName" name="UserName" placeholder="DogeToTheMoon"><br><br>
+            <label for="Password">Password:</label><br><br>
+            <input type="password" id="Password" name="Password" placeholder="Password"><br>
+            <br><br>
+            <input type="submit" value="Submit" style="background-color:#00bfa5;">
+            <input type="reset" value="Reset"  style="background-color:#fa9698;">
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
